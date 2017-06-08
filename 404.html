@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GKB Studio</title>
+
+<style>
+	.use-flexbox{
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		width:100%;
+		height:100%;
+	}
+	
+	.image{
+		height:200px;
+		line-height:200px;
+		background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMAUExURW1ceU1/qkJ9t0N5uEN5ukN7uEJ5vEB4vUB4vkB4v0R6uU9+vlt8tGxigmtojGx0nUB4wHO2PXSzPFupbVmldWKebWe+Tmi/TmGzX2O2WWK0XmK0X2O2XGW6VWCyYGnCR2vFRGvERWzEQ2zERGzGRGnBSmnBS2rCSEyNnE+UkFyGlEiGp0SAsm2Gtq40Fqs1GrcvCbstA7suALovAbotBLkuBbguBrguB7wsALwtAbwuAbwvArswA7oyA7sxBJZHQZVOSpJYXI9qdq5/QLB+Qb90Rbp4RLt4RcE8E8E9FME+FcVtRMdsRchqRMJyRoJ+nJKIL5GLMJSJMKGEOaOEOv///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALF1b1UAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTCtCgrAAAAEW0lEQVR4Xu3cWXsURRSHcUQlRBQV9w0DQXFfCEpEWRRQcUEB5/t/FU93v2G6M91OJ/WvOjU+53ehU6fq4rxPx1tPLP4nIqQ2EVKbCKlNhNQmQmoTIbWJkNpESG0ipDYRUpsIqU2E1CZCahMhtckXst/gdwE5QtqEAS5ykoew+gqus1GHsPYYXmSiDWHlcbzJRBnCwlN4lYkwhH0n8SwTXQjrTuNdJrIQtj3A1DDYlBCW7TBbGp9KiULaTcFoaGouow9hUpomhIYGk+LUIQzKk4QQYRg40IZw9qAIocIw8CAN4ewiQpao8O2IkB4yIkQjXwjDHi7yEIRcv/7dyJ7taIibPDRfZO/GzR++54hu9wFu8kgP+fbr0T0Z9nGTh+CLfP7XT7e//OraVY7o/twGuMlDEPJS48zzL3LE/t6e/bczyOEmD1VIg3OH5TtXrjT/5CaPbCE/3vri2jdD3OSRLaTn7AsnWhzzKBHC9eS9RIT0sOfkptxGyCzSkIlVuYyQWRQh60q426iQ0WW52oCQNSXcbEJIv2R1X+YbF3JoYYaGQR6ikGGJGRszy0MVslIygpd5yEJmlPAwD13I+hLeLTE3DBIIQ9am8OoJxoZBCmnImhTeHGDaYJJCHPKfKbw4wNQwSCIPMayH5ZlrMDQM0uQIOYx9hwszMwwSeYUwMgxSOYUwMQySRcgRsHJvZwaGQTqXEM6GgYBHCEfDQMEhhJNhIOEZwlmjfAgH051Fiofw27RHmdIh/DTtlU7hEH6Z7krHK6S7ESobwo8MHWVD+LfhRqhkyBIXSi4hzKU8QhhrxRc5AtZvbZvTzKWKhWxvbW2deua5Z09+9unHr3KhVCJk+/TTT33y2ltvL86/+c67773x4eWdC9wIlQj56JXXP7i8c2lnsdO41OJKp0TI+93utjw/GtzJlAhh9WZ3fpnuSqdwSL6S0iHZShxDtCXFQ3KVlA/JVOIQ0ithoOAbIizxCMlS4hKSo8QnJEOJU0ivhEEq/xBRiVeIvMQtRF3iFyIucQzRlkTIEbDs6rbMG0yOr0AIqw5wJeQU0uBaxDFEm+IaoizxDRGWOIfoSrxDZCUlQzgPy5gl8wgxTBpMUjmF9EoYpPIKmZgeX4TMx8IRMk+EzMfCmx9y0ezuXpwI4Zis2BexGs6tbmg4JysQco6V+zvb9+lwTlcg5Lc/Hvx85/Hf55ZLt9/H/tx2Bx8pTYGQ9v/Dsb9//88Hv9z959GT79PghUK5EPza9Dx++LK4o3wI7v9+j2sRr5AG9xqeIYYnAs4huhLvEFmJe4iqpGQI5waTFqNETiH9FAaJ3ELUJX4hk/PjiZD5WHd1YcYRMhB/WvOxboTMEyHzse7hhRkaBmncQpgZBomcQpi0GCUqGTKOV6kiZD4WnsCjZN4hvEnnG8ILBdcQHkj4hXCrUiCkjAipTYTUJkJqEyG1iZDaREhtIqQ2EVKbCKlNhNQmQmoTIbWJkLosFv8Cu9C8xywq1ekAAAAASUVORK5CYII=');
+		background-repeat: no-repeat; 
+	}
+</style>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="favicon.ico" rel="shortcut icon" type="image/ico" />
+
+
+</head>
+
+<body>
+	<div class="use-flexbox">
+		<div class="image">
+			<span style="font-size: 50pt;font-family: 'Open Sans', sans-serif;margin-left: 200px;">Site</span>
+			<span style="display:block;font-size: 24pt;font-family: 'Open Sans', sans-serif;">
+				由於TWBBS自由網域即將停止服務，GKB Site正式遷移至<a id="href" href="https://blog.gkbsite.org">https://blog.gkbsite.org</a>
+			</span>
+		</div>
+	</div>
+	<script>
+		var parm = location.pathname + location.search + location.hash;
+		var newUrl = "https://blog.gkbsite.org" + parm;
+		document.getElementById('href').setAttribute('href', newUrl);
+	</script>
+</body>
+
+</html>
